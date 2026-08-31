@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bella — Delete your account and data</title>
+<link rel="icon" href="beela-logo-120.png">
+<style>
+  :root { --blue: #4668FF; --ink: #12141D; --dim: #5A6072; --bg: #F7F8FC; --border: #E4E8F5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #F2F4FA; --dim: #9AA1B5; --bg: #0B0D14; --border: #232A3D; }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.7; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { font-size: 30px; letter-spacing: -0.5px; }
+  .updated { color: var(--dim); font-size: 13.5px; margin: 6px 0 32px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  p, li { font-size: 15.5px; color: var(--dim); }
+  li { margin-left: 20px; margin-bottom: 6px; }
+  b { color: var(--ink); }
+  a { color: var(--blue); }
+  .steps { counter-reset: s; list-style: none; margin: 12px 0; }
+  .steps li { margin-left: 0; padding-left: 34px; position: relative; margin-bottom: 10px; }
+  .steps li::before {
+    counter-increment: s; content: counter(s);
+    position: absolute; left: 0; top: 3px;
+    width: 22px; height: 22px; border-radius: 11px;
+    background: var(--blue); color: #fff;
+    font-size: 12.5px; font-weight: 600; line-height: 22px; text-align: center;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--border); font-size: 15px; color: var(--dim); }
+  th { color: var(--ink); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Delete your account and data</h1>
+  <p class="updated">Bella — <b>com.mindvista.bella</b> · Last updated: 25 August 2026</p>
+
+  <p>You can delete your Bella account, and everything in it, from inside the app.
+  It takes four taps and does not need to go through us.</p>
+
+  <h2>From inside the app</h2>
+  <ol class="steps">
+    <li>Open Bella and go to <b>Settings</b>.</li>
+    <li>Scroll to the <b>Danger</b> section.</li>
+    <li>Tap <b>Delete account</b>.</li>
+    <li>Confirm. You are signed out immediately.</li>
+  </ol>
+
+  <h2>If you cannot open the app</h2>
+  <p>Email <a href="mailto:husnainkhalid626@gmail.com?subject=Delete%20my%20Bella%20account">husnainkhalid626@gmail.com</a>
+  from the address you signed up with, asking us to delete your account. We
+  action it within 30 days, and we will only ever act on a request that comes
+  from the account's own email address.</p>
+
+  <h2>What gets deleted, and when</h2>
+  <table>
+    <tr><th>Data</th><th>What happens</th></tr>
+    <tr><td>Your account and sign-in</td><td>Deleted immediately</td></tr>
+    <tr><td>Reminders, memories and chats</td><td>Deleted immediately — every table is removed with the account</td></tr>
+    <tr><td>Settings, including your own hours</td><td>Deleted immediately</td></tr>
+    <tr><td>Voice recordings</td><td>Nothing to delete — a recording is never stored. It is transcribed and discarded in the same request</td></tr>
+    <tr><td>Location</td><td>Nothing to delete — place reminders live on your phone, and shop searches are rounded to ~1&nbsp;km and never written to our database</td></tr>
+    <tr><td>Anything held on your phone</td><td>Removed when you sign out or uninstall</td></tr>
+    <tr><td>Encrypted database backups</td><td>Expire automatically within 30 days</td></tr>
+  </table>
+
+  <p>Deletion is permanent. There is no way to recover an account afterwards, so
+  if you want a copy of your data first, use <b>Settings → Your data → Export
+  everything</b> before you delete.</p>
+
+  <h2>Related</h2>
+  <p><a href="privacy.html">Privacy policy</a> · <a href="index.html">About Bella</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bella — Privacy Policy</title>
+<link rel="icon" href="beela-logo-120.png">
+<style>
+  :root { --blue: #4668FF; --ink: #12141D; --dim: #5A6072; --bg: #F7F8FC; --border: #E4E8F5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #F2F4FA; --dim: #9AA1B5; --bg: #0B0D14; --border: #232A3D; }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.7; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { font-size: 30px; letter-spacing: -0.5px; }
+  .updated { color: var(--dim); font-size: 13.5px; margin: 6px 0 32px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  p, li { font-size: 15.5px; color: var(--dim); }
+  li { margin-left: 20px; margin-bottom: 6px; }
+  b { color: var(--ink); }
+  a { color: var(--blue); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 2 August 2026</p>
+
+  <p>Bella is a personal memory assistant: you tell it things to remember, and it
+  reminds you — out loud, at the right time or place. This page says plainly what
+  data that involves, where it goes, and what never happens to it.</p>
+
+  <h2>What we store</h2>
+  <ul>
+    <li><b>Your account</b> — email address (or Google sign-in identity) and settings such as what "morning" and "evening" mean to you.</li>
+    <li><b>Your memories</b> — the reminders you save: the sentence you said, the title, the time, and the short spoken line Bella reads to you.</li>
+    <li><b>Your questions</b> — what you ask Bella in chat, and her answers, so your conversation history works.</li>
+  </ul>
+
+  <h2>What stays on your phone only</h2>
+  <ul>
+    <li><b>Where you are, minute to minute.</b> Place reminders are watched by your phone's own operating system. Bella is not tracking you, and your continuous location never reaches us.</li>
+    <li><b>Spoken audio for reminders</b> — generated on your device.</li>
+    <li><b>Snoozes, and a full offline copy of your reminders</b> — so Bella works with no signal.</li>
+  </ul>
+
+  <h2>The one time location does leave your phone</h2>
+  <p>When you ask Bella to find shops that sell something — "buy a cake whenever
+  I'm free" — it has to ask a map where those shops are. At that moment, and only
+  then, your phone sends an <b>approximate</b> location to our server, which asks
+  Google Places. The coordinates are deliberately rounded to about a kilometre
+  before they are sent, because a shop search across 30 km does not need to know
+  which street you are on.</p>
+  <p>That approximate point is <b>never written to our database</b>. It is held in
+  the server's memory for up to a day, together with what was searched for, so
+  that the next person asking the same question about the same neighbourhood does
+  not cost another lookup. It is not linked to your account, and it disappears
+  when the server restarts.</p>
+  <p>Everything after that is on your phone: which shops became reminders, when
+  you pass them, and whether you were free at the time.</p>
+
+  <h2>Third parties we rely on</h2>
+  <ul>
+    <li><b>Supabase</b> hosts the database and sign-in. Your data is protected by row-level security: each account can only ever read its own rows.</li>
+    <li><b>Google Gemini</b> turns your sentences into structured reminders and transcribes voice notes. Recordings are sent for transcription and are not used by us for anything else.</li>
+    <li><b>Google Places</b> answers "which shops sell this, near here", using the approximate location described above. It is asked by our server, never by your phone directly.</li>
+    <li><b>OpenStreetMap</b> answers the same question when Google is unavailable or not configured. It receives the same approximate area and nothing that identifies you.</li>
+  </ul>
+
+  <h2>What never happens</h2>
+  <ul>
+    <li>Your data is <b>never sold</b> and never shared with advertisers.</li>
+    <li>There is <b>no ad tracking</b> and no analytics that identify you.</li>
+    <li>Nobody at Bella reads your memories except if you ask us to while debugging a problem for you.</li>
+  </ul>
+
+  <h2>Your controls</h2>
+  <ul>
+    <li><b>Export everything</b> — Settings → Your data gives you a complete file of everything we hold.</li>
+    <li><b>Delete everything</b> — deleting your account removes your account and every memory, reminder and chat, permanently.</li>
+    <li>Deleted reminders sit in Trash for 30 days, then are gone for good.</li>
+  </ul>
+  <p>Step-by-step instructions, and what to do if you cannot open the app, are on
+  the <a href="delete-account.html">account deletion page</a>.</p>
+
+  <h2>Backups</h2>
+  <p>Encrypted backups of the database are kept for 30 days so a technical failure
+  cannot destroy your reminders. They are protected by the same access rules and
+  expire automatically.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or requests: <a href="mailto:husnainkhalid626@gmail.com">husnainkhalid626@gmail.com</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bella — your personal memory assistant</title>
+<meta name="description" content="Say it once. Bella remembers, and speaks up at the right moment — even on a locked phone.">
+<link rel="icon" href="beela-logo-120.png">
+<style>
+  :root { --blue: #4668FF; --ink: #12141D; --dim: #5A6072; --bg: #F7F8FC; --card: #FFFFFF; --border: #E4E8F5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #F2F4FA; --dim: #9AA1B5; --bg: #0B0D14; --card: #131722; --border: #232A3D; }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+  header { text-align: center; padding: 40px 0 8px; }
+  header img { width: 96px; height: 96px; border-radius: 24px; }
+  h1 { font-size: 44px; letter-spacing: -1.5px; color: var(--blue); margin-top: 18px; }
+  .tag { font-size: 19px; color: var(--dim); margin-top: 8px; }
+  .say { margin: 36px auto 0; max-width: 460px; background: var(--blue); color: #fff; border-radius: 22px 22px 6px 22px; padding: 14px 20px; font-size: 17px; text-align: left; }
+  .reply { margin: 10px auto 0; max-width: 460px; background: var(--card); border: 1px solid var(--border); border-radius: 22px 22px 22px 6px; padding: 14px 20px; font-size: 16px; color: var(--dim); text-align: left; }
+  .reply b { color: var(--ink); }
+  section { margin-top: 56px; }
+  h2 { font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--blue); margin-bottom: 18px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; }
+  .card h3 { font-size: 16px; margin-bottom: 6px; }
+  .card p { font-size: 14px; color: var(--dim); }
+  footer { margin-top: 72px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 13.5px; color: var(--dim); display: flex; gap: 18px; flex-wrap: wrap; }
+  footer a { color: var(--blue); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="beela-logo-512.png" alt="Bella">
+    <h1>Bella</h1>
+    <p class="tag">Say it once. She remembers — and speaks up at the right moment.</p>
+    <div class="say">buy a bulb tomorrow evening</div>
+    <div class="reply"><b>Tue, 7:00 pm</b> · your evening starts 19:00 — Bella will say it out loud, even on a locked phone.</div>
+  </header>
+
+  <section>
+    <h2>What Bella does</h2>
+    <div class="grid">
+      <div class="card"><h3>🎙 Plain words in</h3><p>Type or speak naturally — "call Ali next Friday at 6", "pay rent on the 1st every month". No forms, no date pickers.</p></div>
+      <div class="card"><h3>🔊 A voice out</h3><p>Reminders fire on the exact minute and speak out loud — locked phone, airplane mode, doesn't matter. Snooze from the lock screen.</p></div>
+      <div class="card"><h3>📍 Places, not just times</h3><p>Pin a spot on the map and Bella speaks up when you pass nearby — "you're near the cake shop".</p></div>
+      <div class="card"><h3>🌅 A morning briefing</h3><p>At your own morning hour she speaks your day. On empty days, silence — an empty briefing is an alarm nobody set.</p></div>
+      <div class="card"><h3>🧠 Ask your memory</h3><p>"What am I forgetting?" answered instantly from your own saved words, quoted back so you can check them.</p></div>
+      <div class="card"><h3>📵 Works offline</h3><p>Your reminders live on your phone. No signal changes nothing about whether Bella speaks.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Coming soon</h2>
+    <p style="color: var(--dim); font-size: 15px;">Bella is in private testing on iPhone. Android follows.</p>
+  </section>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a>
+    <span>© 2026 Bella</span>
+  </footer>
+</div>
+</body>
+</html>
