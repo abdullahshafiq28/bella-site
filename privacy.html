@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bella — Privacy Policy</title>
+<link rel="icon" href="beela-logo-120.png">
+<style>
+  :root { --blue: #4668FF; --ink: #12141D; --dim: #5A6072; --bg: #F7F8FC; --border: #E4E8F5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #F2F4FA; --dim: #9AA1B5; --bg: #0B0D14; --border: #232A3D; }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.7; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { font-size: 30px; letter-spacing: -0.5px; }
+  .updated { color: var(--dim); font-size: 13.5px; margin: 6px 0 32px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  p, li { font-size: 15.5px; color: var(--dim); }
+  li { margin-left: 20px; margin-bottom: 6px; }
+  b { color: var(--ink); }
+  a { color: var(--blue); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 29 October 2026</p>
+
+  <p>Bella is a personal memory assistant: you tell it things to remember, and it
+  reminds you — out loud, at the right time or place. This page says plainly what
+  data that involves, where it goes, and what never happens to it.</p>
+
+  <h2>What we store</h2>
+  <ul>
+    <li><b>Your account</b> — email address (or Google sign-in identity) and settings such as what "morning" and "evening" mean to you.</li>
+    <li><b>Your memories</b> — the reminders you save: the sentence you said, the title, the time, and the short spoken line Bella reads to you.</li>
+    <li><b>Places you pin</b> — for a place reminder, the point and distance you chose on the map (or the shops Bella found for it), saved with that reminder so it comes back if you change phones.</li>
+    <li><b>Your questions</b> — what you ask Bella in chat, and her answers, so your conversation history works.</li>
+    <li><b>Which reminders come back</b> — when you save a reminder, Bella notes whether it is the kind that repeats (like a monthly bill) and how often, so she can offer next time's reminder if you forget to set one. That note is saved with the reminder.</li>
+  </ul>
+
+  <h2>What stays on your phone only</h2>
+  <ul>
+    <li><b>Where you are, minute to minute.</b> Place reminders are watched by your phone's own operating system. To work while Bella is closed, this happens in the background, and only if you allow it (“Allow all the time” on Android, “Always” on iPhone). You can take that back in your phone's settings at any time. Bella is not tracking you, and your continuous location never reaches us.</li>
+    <li><b>Your calendars.</b> If you connect them, Bella reads only the calendars you tick, directly on your phone, and never changes them. Your events are not uploaded to us or stored by us.</li>
+    <li><b>Spoken audio for reminders</b> — kept on your device once it has been made (see Google Cloud Text-to-Speech below).</li>
+    <li><b>Snoozes, and a full offline copy of your reminders</b> — so Bella works with no signal.</li>
+    <li><b>Suggestions</b> — when a repeating reminder is due again, and what you answered (“Not this time”, “Stop suggesting this”), are worked out and kept on your phone. Bella never saves a suggested reminder unless you confirm it.</li>
+  </ul>
+
+  <h2>The one time location does leave your phone</h2>
+  <p>When you ask Bella to find shops that sell something — "buy a cake whenever
+  I'm free" — it has to ask a map where those shops are. At that moment, and only
+  then, your phone sends an <b>approximate</b> location to our server, which asks
+  Google Places. The coordinates are deliberately rounded to about a kilometre
+  before they are sent, because a shop search across 30 km does not need to know
+  which street you are on.</p>
+  <p>That approximate point is <b>never written to our database</b>. It is held in
+  the server's memory for up to a day, together with what was searched for, so
+  that the next person asking the same question about the same neighbourhood does
+  not cost another lookup. It is not linked to your account, and it disappears
+  when the server restarts.</p>
+  <p>Everything after that is on your phone: which shops became reminders, when
+  you pass them, and whether you were free at the time.</p>
+
+  <h2>How we measure the app</h2>
+  <p>The Android app uses Google's Firebase tools — <b>Google Analytics</b>,
+  <b>Crashlytics</b> and <b>Performance Monitoring</b> — so we can see how Bella
+  is used and fix problems. They receive:</p>
+  <ul>
+    <li><b>App activity</b> — which screens you open, and actions such as saving, completing or snoozing a reminder, or asking a question, including whether a reminder was spoken, typed or made in chat. <b>Never</b> the words you said or typed, reminder titles, names or places.</li>
+    <li><b>Crash and performance data</b> — crash reports and error details, how long the app takes to start, and how long requests to our server take.</li>
+    <li><b>Device information</b> — phone model, Android version, app version, language, and an approximate country and city that Google works out from your connection.</li>
+    <li><b>Identifiers</b> — an app-instance ID created by Firebase, and your Bella account's random ID, so that a crash can be matched to your account if you report a problem. Not your name or email address.</li>
+  </ul>
+  <p>We do <b>not</b> collect your phone's Advertising ID, this data is <b>not</b>
+  used for advertising, and Google signals (Google's demographics and
+  interests) is turned off. Google processes this data for us as a service
+  provider and keeps it for up to 14 months; see
+  <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
+
+  <h2 id="google-calendar">Google Calendar data</h2>
+  <p>If you choose to connect Google Calendar, Bella asks Google for
+  <b>read-only</b> access to your calendars (the <code>calendar.readonly</code>
+  permission). On iPhone, Bella connects to Google Calendar directly; on Android,
+  it reads the calendars already on your phone. With that access, Bella:</p>
+  <ul>
+    <li><b>Reads</b> the list of your calendars, so you can pick which ones Bella follows, and the upcoming events on the calendars you pick (title, start and end time, location) for about the next month.</li>
+    <li><b>Uses</b> them for one thing only: to remind you before your events, by showing them in Bella's calendar view and scheduling spoken reminders on your phone.</li>
+    <li><b>Never</b> creates, changes or deletes an event, and never reads a calendar you have not picked.</li>
+    <li><b>Keeps</b> them on your phone. The access token Google gives Bella is kept in your phone's secure storage. Your events are not uploaded to our database.</li>
+    <li><b>Shares</b> one thing only: to speak an event's reminder, the short sentence Bella will say (which includes the event's title) passes through our server to Google Cloud Text-to-Speech to be turned into audio. It is not stored by us.</li>
+    <li>Is <b>never sold</b>, never used for advertising, and never used by us to develop or train AI models.</li>
+  </ul>
+  <p>You can disconnect at any time from Bella's Calendars screen, or remove
+  Bella's access in your Google Account at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+  Signing out of Bella deletes everything Bella kept on your phone.</p>
+  <p>Bella's use and transfer of information received from Google APIs to any
+  other app will adhere to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.</p>
+
+  <h2>Third parties we rely on</h2>
+  <ul>
+    <li><b>Supabase</b> hosts the database and sign-in. Your data is protected by row-level security: each account can only ever read its own rows.</li>
+    <li><b>Google Gemini</b> turns your sentences into structured reminders, notes whether a reminder is the kind that repeats, and transcribes voice notes. Recordings are sent for transcription and are not used by us for anything else.</li>
+    <li><b>Google Cloud Text-to-Speech</b> gives Bella her voice. The short sentence she will say — for a calendar event, its title and how soon it starts — passes through our server to be turned into audio. It is not stored by us; only the finished audio is kept, on your phone.</li>
+    <li><b>Google Places</b> answers "which shops sell this, near here", using the approximate location described above. It is asked by our server, never by your phone directly.</li>
+    <li><b>OpenStreetMap</b> answers the same question when Google is unavailable or not configured. It receives the same approximate area and nothing that identifies you.</li>
+    <li><b>Google Firebase</b> (Google Analytics, Crashlytics, Performance Monitoring) measures how the app is used and how it performs — see “How we measure the app” above.</li>
+  </ul>
+
+  <h2>What never happens</h2>
+  <ul>
+    <li>Your data is <b>never sold</b> and never shared with advertisers.</li>
+    <li>There is <b>no ad tracking</b>: we never collect the Advertising ID, and our analytics never see what you write or say.</li>
+    <li>Nobody at Bella reads your memories except if you ask us to while debugging a problem for you.</li>
+  </ul>
+
+  <h2>Your controls</h2>
+  <ul>
+    <li><b>Export everything</b> — Settings → Your data gives you a complete file of everything we hold.</li>
+    <li><b>Delete everything</b> — deleting your account removes your account and every memory, reminder and chat, permanently.</li>
+    <li>Deleted reminders sit in Trash for 30 days, then are gone for good.</li>
+  </ul>
+  <p>Step-by-step instructions, and what to do if you cannot open the app, are on
+  the <a href="delete-account.html">account deletion page</a>.</p>
+
+  <h2>Backups</h2>
+  <p>Encrypted backups of the database are kept for 30 days so a technical failure
+  cannot destroy your reminders. They are protected by the same access rules and
+  expire automatically.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or requests: <a href="mailto:husnainkhalid626@gmail.com">husnainkhalid626@gmail.com</a></p>
+</div>
+</body>
+</html>
